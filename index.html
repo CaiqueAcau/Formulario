@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Formulário</title>
+        <link href="reset.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" 
+        rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto+
+        Mono:ital,wght@0,100;1,100&display=swap" rel="stylesheet"> 
+    </head>
+    <header>
+        <div class="cabecalho">
+            <h1>Formulário de Pesquisa</h1>
+            <p id="paragrafo">Obrigado por nos ajudar a melhorar a plataforma </p>
+        </div>
+    </header>
+    <body>
+        <main>
+            <form class="formulario">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" class="input-padrao" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="input-padrao" placeholder="Seuemail@dominio.com">
+                <label for="idade">Idade(Opcional)</label>
+                <input type="number" id="idade" class="input-padrao">
+
+                <label>Qual opção descreve melhor sua função atual?</label>
+                <select class="input-padrao">
+                    <option value="opcao" disabled selected >Selecione a função atual </option>
+                    <option value="estudante">Estudante</option>
+                    <option value="integral">Trabalho em tempo integral</option>
+                    <option value="estudo">Estudo em tempo integral</option>
+                    <option value="não">Não dizer</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <fieldset>
+                    <legend>Você recomendaria esse site a um amigo?</legend>
+                    <label for="radio-sim"> 
+                    <input type="radio" name="formulario" value="sim" id="radio-sim">Sim</label>
+					<label for="radio-nao">
+                    <input type="radio" name="formulario" value="nao" id="radio-nao">Não</label>
+					<label for="radio-talvez">
+                    <input type="radio" name="formulario" value="talvez" id="radio-talvez">Talvez</label>
+                </fieldset>
+
+                <label>Qual é o seu recurso favorito do Site?</label>
+                <select class="input-padrao">
+                    <option value="opcao" disabled selected >Selecione... </option>
+                    <option value="desafios">Desafios</option>
+                    <option value="projetos">Projetos</option>
+                    <option value="comunidade">Comudidade</option>
+                    <option value="codigo-aberto">Código Aberto</option>
+                </select>
+
+                <label id="checkbox">O que você gostaria de ver melhorado? </label>
+                <label><input type="checkbox" >Projetos Front-end</label>
+                <label><input type="checkbox"  >Projetos Back-end</label>
+                <label><input type="checkbox"  >Data de Vizualização</label>
+                <label><input type="checkbox" >Desafios</label>
+                <label><input type="checkbox" >Videos</label>
+                <label><input type="checkbox" >Forum</label>
+                <label><input type="checkbox" >Wiki</label>
+                <label><input type="checkbox" >Cursos Adicionais</label>
+                <label><input type="checkbox" >Comunidade de código aberto</label>
+
+                <label>Algum comentário ou sugestão? </label>
+                <textarea cols="70" rows="10" class="input-padrao"></textarea>
+
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+        </main>
+    </body>
+</html>
